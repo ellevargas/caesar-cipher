@@ -1,0 +1,14 @@
+<h1>Encode a Message</h1>
+
+<form name="new-encoding" action="show" method="post" accept-charset="utf-8">
+  <label for="offset_letter">Letter to offset by: </label>
+  <input type="text" name="offset_letter" id="offset_letter">
+
+  <label for="message">Message:</label>
+  <input type="text" name="message" id="message">
+
+  <button type="submit">Encode!</button>
+   <!-- value="Encode!" if it's an input instead of a button -->
+
+   <!-- <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> -->
+</form>
