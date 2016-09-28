@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'decodings/index'
+
+  get 'decodings/new' => 'decodings#new'
+
+  post 'decodings/show'
+  get 'decodings/show'
+
+
   get 'encodings/index'
 
   get 'encodings/new' => 'encodings#new', as: 'new'
